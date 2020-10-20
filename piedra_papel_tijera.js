@@ -3,7 +3,7 @@ var piedra = document.getElementById("piedra");
 var papel = document.getElementById("papel");
 var tijera = document.getElementById("tijera");
 // ahi traigo los botones
-
+// hola leon
 
 function jugar(event){
     var usuario = event.target.getAttribute('data-num');
