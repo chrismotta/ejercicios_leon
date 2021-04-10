@@ -25,4 +25,4 @@ function getRespuestasCorrectas(
   return "Los valores ingresados no corresponden";
 }
 
-resultado.innerHTML = getRespuestasCorrectas(400, 550, 3, -2);
+resultado.innerHTML = getRespuestasCorrectas(40, 55, 3, -2);
