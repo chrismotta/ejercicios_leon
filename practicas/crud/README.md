@@ -25,7 +25,7 @@ Los comentarios se guardaran en un array de objetos con el siguiente formato:
 
 ## Objetivo 1
 
-Crear el index.html que usaremos como entrada a la aplicación y agregarle un formulario con los campos necesarios para el comentario
+Crear el index.html que usaremos como entrada a la aplicación y agregarle un formulario con los campos necesarios para el comentario (creador y comentario)
 
 ## Objetivo 2
 
