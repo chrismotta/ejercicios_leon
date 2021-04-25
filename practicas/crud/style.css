@@ -50,18 +50,22 @@ html, body {
 
 .container-form-usuario input{
     height: 30px;
+    background-color: #333;
+    border: none;
+    border-bottom: 2px solid rgb(22, 177, 238);
+    border-radius: 0px;
 }
 
 .container-form-comentario input{
     height: 100px;
-}
-
-.input{
-    margin-top: 10px;
     border: rgb(22, 177, 238) 2px solid;
     border-radius: 5px;
     background-color: #333;
     box-shadow: rgb(21, 169, 228) 0px 0px 2px 2px;
+}
+
+.input{
+    margin-top: 10px;
     color: white;
     outline: none;
 }
