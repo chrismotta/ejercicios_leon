@@ -37,7 +37,11 @@ Crear el modulo de comentario en un archivo aparte, y usar ese modulo para rende
 
 - [x] Identificar el form dentro del script y escuchar el evento submit
 - [ ] Agregar cada valor submiteado al array de comentarios
-- [ ] Agregar a los comentarios los valores autogenerados (\_ID, frechaCreacion, fechaModificacion, editado)
+- [ ] Agregar a los comentarios los valores autogenerados
+- - \_ID: auto-incremental
+- - frechaCreacion: fecha y hora actuales
+- - frechaModificacion: fecha y hora actuales
+- - editado: siempre en false
 - [ ] Mostrar la lista de comentarios en la aplicación
 - [ ] Crear un componente externo para usar como modulo de comentario
 
