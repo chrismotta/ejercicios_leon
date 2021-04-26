@@ -1,3 +1,15 @@
+var formulario = document.getElementById("formulario");
+
+var nombre = document.getElementById("usuario");
+var comentario = document.getElementById("comentario");
+
+formulario.addEventListener("submit", mostrarInfo);
+
+function mostrarInfo(e){
+    e.preventDefault();
+    console.log(`El nombre es: ${nombre.value}
+El comentario es: ${comentario.value}`);
+}
 
 
 /* var comentario = [
