@@ -35,6 +35,11 @@ Crear el script que va a tener la base de nuestra lógica. Generar la función q
 
 Crear el modulo de comentario en un archivo aparte, y usar ese modulo para renderizar los comentarios que se van ingresando en el array
 
+- [x] Identificar el form dentro del script y escuchar el evento submit
+- [ ] Agregar cada valor submiteado al array de comentarios
+- [ ] Mostrar la lista de comentarios en la aplicación
+- [ ] Crear un componente externo para usar como modulo de comentario
+
 ## Objetivo 4
 
 Crear los metodos editar y borrar, que deben ser despachados desde nuestro módulo de comentario y gestionados en nuestro script general
