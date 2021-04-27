@@ -12,13 +12,18 @@ formulario.addEventListener("submit", mostrarInfo);
 function mostrarInfo(e) {
   e.preventDefault(); //esto va primero siempre
 
-  let tiempo = new Date();
-  let comentarioNuevo = {
+  const tiempo = new Date();
+
+  const fecha = `${tiempo.getDate()}/${tiempo.getMonth()+1}/${tiempo.getFullYear()}`;
+  const horario = `${tiempo.getHours()}:${tiempo.getMinutes()}`;
+  const fecha_y_horario = `${fecha} - ${horario}`
+
+  const comentarioNuevo = {
     nombre: usuario.value,
     comentario: comentario_mensaje.value,
     _ID: acumulador++,
-    fechaCreacion: `${tiempo.getHours()}:${tiempo.getMinutes()}`,
-    fechaModificacion: `${tiempo.getHours()}:${tiempo.getMinutes()}`,
+    fechaCreacion: `${fecha_y_horario}`,
+    fechaModificacion: `${fecha_y_horario}`,
     editado: false,
   };
   array_comentarios.push(comentarioNuevo);
