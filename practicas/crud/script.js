@@ -39,7 +39,7 @@ function mostrarInfo(e) {
   //   clave: valor,
   //   clave: valor
   // }
-  // Entonces podrías pushearlo al array directamente, sin necesidad de otra función.
+  // Entonces podrías pushearlo al array directamente, sin necesidad de una función externa.
   // Probalo (y no borres tu solución, dejala comentada, así la comparamos) 😉
 
   console.log(array_comentarios);
