@@ -3,8 +3,11 @@ const formulario = document.getElementById("formulario");
 const usuario = document.getElementById("usuario");
 const comentario_mensaje = document.getElementById("comentario");
 
-let array_comentarios = [];
 
+
+const array_comentarios = [];
+
+let acumulador = 1;
 /* function crearComentarios(
   nombre,
   comentario,
@@ -23,16 +26,27 @@ let array_comentarios = [];
  */
 formulario.addEventListener("submit", mostrarInfo);
 
+
+
 function mostrarInfo(e) {
+  let tiempo = new Date();
   e.preventDefault();
-  let objeto = {
+  let comentarioNuevo = {
     nombre: usuario.value,
     comentario: comentario_mensaje.value,
+    _ID: acumulador++,
+    fechaCreacion: `${tiempo.getHours()}:${tiempo.getMinutes()}`,
+    fechaModificacion: `${tiempo.getHours()}:${tiempo.getMinutes()}`,
+    editado: false,
   };
-  array_comentarios.push(objeto);
+  array_comentarios.push(comentarioNuevo);
 
   // ok, no puedo ponerte un 10, por el uso del nombre "objeto" como nombre del objeto
   // (chico literal! ponele un nombre!! nuevoComentario!!! algo!!!)
 
   console.log(array_comentarios);
 }
+
+
+
+
