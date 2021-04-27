@@ -1,27 +1,23 @@
 const formulario = document.getElementById("formulario");
 
-const nombre = document.getElementById("usuario");
-const comentario = document.getElementById("comentario");
+const usuario = document.getElementById("usuario");
+const comentario_mensaje = document.getElementById("comentario");
+
+let array_comentarios = [];
+
+function crearComentarios(nombre, comentario, _ID, fechaCreacion, fechaModificacion, editado){
+    this.nombre = nombre;
+    this.comentario = comentario;
+    this._ID = _ID;
+    this.fechaCreacion = fechaCreacion;
+    this.fechaModificacion = fechaModificacion;
+    this.editado = editado
+}
 
 formulario.addEventListener("submit", mostrarInfo);
 
 function mostrarInfo(e){
     e.preventDefault();
-    array_comentarios[0].creador = nombre.value;
-    array_comentarios[0].comentario = comentario.value;
-    console.log(`El nombre es: ${array_comentarios[0].creador}
-El comentario es: ${array_comentarios[0].comentario}`); 
-    console.log(array_comentarios[0]);
+    array_comentarios.push(new crearComentarios(usuario.value, comentario_mensaje.value));
+    console.log(array_comentarios);
 }
-
-let array_comentarios = [
-    {
-    _ID: 123,
-    creador: "",
-    frechaCreacion: "2021-04-23",
-    frechaModificacion: "2021-04-23",
-    comentario: "",
-    editado: false,
-    },
-]
-
