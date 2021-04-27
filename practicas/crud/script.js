@@ -5,7 +5,7 @@ const comentario_mensaje = document.getElementById("comentario");
 
 let array_comentarios = [];
 
-function crearComentarios(
+/* function crearComentarios(
   nombre,
   comentario,
   _ID,
@@ -20,14 +20,19 @@ function crearComentarios(
   this.fechaModificacion = fechaModificacion;
   this.editado = editado;
 }
-
+ */
 formulario.addEventListener("submit", mostrarInfo);
 
 function mostrarInfo(e) {
   e.preventDefault();
-  array_comentarios.push(
+  let objeto = {
+    nombre: usuario.value,
+    comentario: comentario_mensaje.value
+  }
+  array_comentarios.push(objeto);
+  /* array_comentarios.push(
     new crearComentarios(usuario.value, comentario_mensaje.value)
-  );
+  ); */
 
   // Bien por haberlo resuelto, absolutamente válido... pero...
   // al hacer una función constructora y usar 'this' y 'new' estás haciendo
