@@ -91,3 +91,19 @@ html, body {
 .input-submit:hover{
     background-color: rgb(22, 177, 238);
 }
+
+
+.container-comentarios{
+    background-color: #333;
+    width: 400px;
+    height: 500px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: rgb(22, 177, 238) 3px solid;;
+    box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109),
+    0 1px 1px rgba(128, 128, 128, 0.155),
+    0 2.1px 2.1px rgba(128, 128, 128, 0.195),
+    0 4.4px 4.4px rgba(128, 128, 128, 0.241),
+    0 12px 12px rgba(128, 128, 128, 0.35);
+    color: white;
+}
