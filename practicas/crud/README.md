@@ -36,14 +36,17 @@ Crear el script que va a tener la base de nuestra lógica. Generar la función q
 Crear el modulo de comentario en un archivo aparte, y usar ese modulo para renderizar los comentarios que se van ingresando en el array
 
 - [x] Identificar el form dentro del script y escuchar el evento submit
-- [ ] Agregar cada valor submiteado al array de comentarios
-- [ ] Agregar a los comentarios los valores autogenerados
+- [x] Agregar cada valor submiteado al array de comentarios
+- [x] Agregar a los comentarios los valores autogenerados
 - - \_ID: auto-incremental
 - - frechaCreacion: fecha y hora actuales
 - - frechaModificacion: fecha y hora actuales
 - - editado: siempre en false
-- [ ] Mostrar la lista de comentarios en la aplicación
+- [x] Mostrar la lista de comentarios en la aplicación
 - [ ] Crear un componente externo para usar como modulo de comentario
+- - Identificar el bloque html del comentario y llevarlo a un archivo externo
+- - Crear una funcion "render", que devuelve el bloque html
+- - Hacer el export de la funcion, y el import en el script
 
 ## Objetivo 4
 

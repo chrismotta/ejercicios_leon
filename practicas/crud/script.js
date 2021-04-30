@@ -31,29 +31,13 @@ function mostrarInfo(e) {
 
   console.log(arrayComentarios);
 
-  // armar funcion externa que:
-  // limpia caja comentarios
-  // tiene un for que recorre todo el array
-  // carga los textos de toooodos los comentarios en una variable
-  // manda el texto a esapcioComentarios
-
-  // cajaComentarios += `<p>Nombre: ${comentarioNuevo.nombre}</p>
-  // <p>Comentario: ${comentarioNuevo.comentario}</p>
-  // <p>Fecha de publicacion: ${comentarioNuevo.fechaCreacion}</p><br>`;
-
-  // esapcioComentarios.innerHTML = cajaComentarios;
-
-
-popularComentarios();
-
-
-comentarioMensaje.value = "";
+  popularComentarios();
+  comentarioMensaje.value = "";
 }
 
-
-function popularComentarios(){
+function popularComentarios() {
   cajaComentarios = "";
-  for(i=0; arrayComentarios.length>i; i++){
+  for (i = 0; arrayComentarios.length > i; i++) {
     cajaComentarios += `<p>Nombre: ${arrayComentarios[i].nombre}</p>
     <p>Comentario: ${arrayComentarios[i].comentario}</p>
     <p>Fecha de publicacion: ${arrayComentarios[i].fechaCreacion}</p><br>`;
@@ -61,4 +45,3 @@ function popularComentarios(){
     console.log(arrayComentarios[i]);
   }
 }
-
