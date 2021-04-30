@@ -1,3 +1,5 @@
+import renderComentario from "./render.js";
+
 const formulario = document.getElementById("formulario");
 const usuario = document.getElementById("usuario");
 const comentarioMensaje = document.getElementById("comentario");
@@ -35,12 +37,12 @@ function mostrarInfo(e) {
   comentarioMensaje.value = "";
 }
 
+
+
 function popularComentarios() {
   cajaComentarios = "";
-  for (i = 0; arrayComentarios.length > i; i++) {
-    cajaComentarios += `<p>Nombre: ${arrayComentarios[i].nombre}</p>
-    <p>Comentario: ${arrayComentarios[i].comentario}</p>
-    <p>Fecha de publicacion: ${arrayComentarios[i].fechaCreacion}</p><br>`;
+  for (let i = 0; arrayComentarios.length > i; i++) {
+    cajaComentarios += renderComentario(arrayComentarios, i);
     esapcioComentarios.innerHTML = cajaComentarios;
     console.log(arrayComentarios[i]);
   }
