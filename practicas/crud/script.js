@@ -42,7 +42,7 @@ function mostrarInfo(e) {
 function popularComentarios() {
   cajaComentarios = "";
   for (let i = 0; arrayComentarios.length > i; i++) {
-    cajaComentarios += renderComentario(arrayComentarios, i);
+    cajaComentarios += renderComentario(arrayComentarios[i]);
     esapcioComentarios.innerHTML = cajaComentarios;
     console.log(arrayComentarios[i]);
   }
