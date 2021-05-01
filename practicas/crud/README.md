@@ -43,7 +43,7 @@ Crear el modulo de comentario en un archivo aparte, y usar ese modulo para rende
 - - frechaModificacion: fecha y hora actuales
 - - editado: siempre en false
 - [x] Mostrar la lista de comentarios en la aplicación
-- [ ] Crear un componente externo para usar como modulo de comentario
+- [x] Crear un componente externo para usar como modulo de comentario
 - - Identificar el bloque html del comentario y llevarlo a un archivo externo
 - - Crear una funcion "render", que devuelve el bloque html
 - - Hacer el export de la funcion, y el import en el script
@@ -51,3 +51,6 @@ Crear el modulo de comentario en un archivo aparte, y usar ese modulo para rende
 ## Objetivo 4
 
 Crear los metodos editar y borrar, que deben ser despachados desde nuestro módulo de comentario y gestionados en nuestro script general
+
+- Resolver el show / hide del menu.
+- La funcion borrar debe eliminar el elemento con el id recibido y volver a pupular.

@@ -37,8 +37,6 @@ function mostrarInfo(e) {
   comentarioMensaje.value = "";
 }
 
-
-
 function popularComentarios() {
   cajaComentarios = "";
   for (let i = 0; arrayComentarios.length > i; i++) {
@@ -47,3 +45,7 @@ function popularComentarios() {
     console.log(arrayComentarios[i]);
   }
 }
+
+window.editar = function (id) {
+  alert(`Editando el elemento ${id}`);
+};
