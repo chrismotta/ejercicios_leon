@@ -1,5 +1,12 @@
-export default function renderComentario(array_de_comentarios){
-    return `<p>Nombre: ${array_de_comentarios.nombre}</p>
-    <p>Comentario: ${array_de_comentarios.comentario}</p>
-    <p>Fecha de publicacion: ${array_de_comentarios.fechaCreacion}</p><br>`;
+export default function renderComentario(elemento){
+    return `<div class="comentario-container">
+    <div class="comentario-header">
+                <span class="nombre-usuario">${elemento.nombre}:</span>
+                <span>${elemento.comentario}</span>
+            </div>
+            <div class="footer-comentario">
+                <div class="horario">${elemento.fechaCreacion}</div>
+                <div class="menu"><i class="fas fa-ellipsis-v" id="menu-icono"></i></div>
+                </div> 
+            </div>`
 } 

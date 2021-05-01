@@ -1,3 +1,7 @@
+:root{
+    --celeste: rgb(22, 177, 238);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -52,13 +56,13 @@ html, body {
     height: 30px;
     background-color: #333;
     border: none;
-    border-bottom: 2px solid rgb(22, 177, 238);
+    border-bottom: 2px solid var(--celeste);
     border-radius: 0px;
 }
 
 .container-form-comentario input{
     height: 100px;
-    border: rgb(22, 177, 238) 2px solid;
+    border: var(--celeste) 2px solid;
     border-radius: 5px;
     background-color: #333;
     box-shadow: rgb(21, 169, 228) 0px 0px 2px 2px;
@@ -81,7 +85,7 @@ html, body {
     margin-top: 44px;
     background-color: #333;
     color: white;
-    border: rgb(22, 177, 238) 2px solid;
+    border: var(--celeste) 2px solid;
     padding: 10px 20px;
     font-size: 16px;
     transition-duration: 0.4s;
@@ -89,7 +93,7 @@ html, body {
 }
 
 .input-submit:hover{
-    background-color: rgb(22, 177, 238);
+    background-color: var(--celeste);
 }
 
 
@@ -99,7 +103,7 @@ html, body {
     height: 500px;
     margin-left: 20px;
     border-radius: 10px;
-    border: rgb(22, 177, 238) 3px solid;;
+    border: var(--celeste) 3px solid;;
     box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109),
     0 1px 1px rgba(128, 128, 128, 0.155),
     0 2.1px 2.1px rgba(128, 128, 128, 0.195),
@@ -107,4 +111,43 @@ html, body {
     0 12px 12px rgba(128, 128, 128, 0.35);
     color: white;
     overflow: auto;
+}
+
+.comentario-container{
+    width: 100%;
+    min-height: 60px;
+    border-bottom: #eceffc 2px solid;
+    padding: 8px;
+}
+
+.comentario-header{
+    margin-bottom: 15px;
+    word-wrap: break-word;
+} 
+
+.nombre-usuario{
+    font-weight: bold;
+    margin-right: 3px;
+    color: var(--celeste);
+}
+
+.footer-comentario{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.menu{
+    height: auto;
+    padding: 0 6px;
+    cursor: pointer;
+}
+
+#menu-icono{
+    font-size: 20px;
+    color: var(--celeste);
+}
+
+.horario{
+    color: var(--celeste);
 }

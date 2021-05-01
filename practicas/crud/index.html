@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css">
     <title>Crud</title>
 </head>
@@ -18,13 +24,13 @@
             <div class="container-form-usuario">
                 <label for="usuario">
                     <div>Cual es tu nombre?</div>
-                    <input type="text" id="usuario" class="input">
+                    <input type="text" id="usuario" class="input" required>
                 </label>
             </div>
             <div class="container-form-comentario">
                 <label for="comentario">
                     <div>Escribe tu comentario:</div>
-                    <input type="text" id="comentario" class="input">
+                    <input type="text" id="comentario" class="input" required>
                 </label>
             </div>
             <div class="container-form-submit">
@@ -33,7 +39,8 @@
         </form>
         </div>    
     </div>
-    <div class="container-comentarios" id="container-de-comentarios"></div>
+    <div class="container-comentarios" id="container-de-comentarios">
+    </div>
     <script src="script.js" type="module"></script>
 </body>
 </html>
