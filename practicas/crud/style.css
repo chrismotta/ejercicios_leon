@@ -173,7 +173,7 @@ body {
   border-radius: 5px;
   padding: 5px 0;
   box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);
-  /* display: none; */
+  display: none;
 }
 .menu-flotante li {
   padding: 5px 10px;
@@ -183,7 +183,7 @@ body {
 .menu-flotante li:hover {
   background: #ccc;
 }
-.menu-flotante-active {
+.menu-flotante-activo {
   display: initial !important;
 }
 
