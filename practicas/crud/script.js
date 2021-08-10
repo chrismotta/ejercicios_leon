@@ -5,7 +5,6 @@ const usuario = document.getElementById("usuario");
 const comentarioMensaje = document.getElementById("comentario");
 const esapcioComentarios = document.getElementById("container-de-comentarios");
 
-
 const arrayComentarios = [];
 let acumulador = 1;
 let cajaComentarios = "";
@@ -49,4 +48,16 @@ function popularComentarios() {
 
 window.editar = function (id) {
   alert(`Editando el elemento ${id}`);
-}
+};
+
+window.mostrarMenu = function (id) {
+  // alert(`mostrar menu ${id}`);
+  console.log("id", id);
+
+  // identificar el menu correspondiente
+  // agregar a ese menu la clase menu-flotante-activo
+
+  // para cerrarlo agregar un addeventlistener al body
+  // que borre la clase
+  // y removerlo despues del click
+};

@@ -183,8 +183,8 @@ body {
 .menu-flotante li:hover {
   background: #ccc;
 }
-.menu-flotante-active {
-  /* display: initial !important; */
+.menu-flotante-activo {
+  display: initial !important;
 }
 
 #menu-icono {
