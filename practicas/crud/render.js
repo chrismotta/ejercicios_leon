@@ -6,7 +6,7 @@ export default function renderComentario(elemento) {
       <li>Borar</li>
     </ul>
     <div class="comentario-header">
-      <div class="menu"><i class="fas fa-ellipsis-v" id="menu-icono"></i></div>
+      <div class="menu" id="menuu"><i class="fas fa-ellipsis-v" id="menu-icono"></i></div>
       <span class="nombre-usuario">${elemento.nombre}:</span>
       <span>${elemento.comentario}</span>
     </div>

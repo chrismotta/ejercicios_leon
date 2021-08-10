@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/96e845de42.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Bloc de notas</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Bloc de notas</h1>
+    </div>
+    <div class="container" id="container">
+        <button class="boton_crear_nota" id="boton_crear_nota"><i class="fas fa-feather-alt"></i></button>
+    </div>
+    <div class="creadorNota" id="creadorNota">
+        <div class="nota_titulo">
+            <h2>Titulo:</h2>
+            <textarea class="nota_titulo_input" id="nota_titulo_input"></textarea>
+        </div>
+        <div class="nota_contenido">
+            <h2>Contenido:</h2>
+            <textarea class="nota_contenido_input" id="nota_contenido_input"></textarea>
+        </div>
+        <div class="container_boton_guardar">
+            <button class="boton_guardar" id="boton_guardar"><i class="far fa-save"></i></button>
+        </div>    
+    </div>
+    <div class="fondo_crear_nota" id="fondo_crear_nota"></div>   
+    <script src="./script.js" type="module"></script>
+</body>
+</html>

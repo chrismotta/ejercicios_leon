@@ -1,0 +1,166 @@
+:root{
+    --violetaPrimario : rgb(89, 17, 223);
+    --celesteSecundario : rgb(0, 202, 216);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: var(--violetaPrimario) 2px solid;
+}
+
+.header h1{
+    font-family: 'Hahmlet', serif;
+    font-size: 55px;
+    color: var(--violetaPrimario);
+}
+
+.creadorNota{
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 350px;
+    margin: 10px auto;
+    z-index: 200;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    display: none;
+}
+
+.creadorNota.activo{
+    display: grid;
+    grid-template-rows: 3fr 6fr 2fr;
+}
+
+.nota_titulo h2{
+    text-align: center;
+    color: var(--celesteSecundario);
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+.nota_titulo .nota_titulo_input{
+    display: block;
+    width: 80%;
+    height: 30px;
+    margin: 10px auto;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #000;
+    font-size: 20px;
+    transition: .3s ease all;
+}
+
+.nota_titulo_input:focus{
+    border-color: var(--celesteSecundario);
+    outline: none;
+}
+
+.nota_contenido h2{
+    text-align: center;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+    color: var(--celesteSecundario);
+}
+
+.nota_contenido_input{
+    display: block;
+    width: 90%;
+    height: 130px;
+    margin: 10px auto;
+    font-size: 14px;
+    border: 2px solid #000;
+    padding: 2px;
+    transition: .3s ease all;
+    border-radius: 5px;
+}
+
+.nota_contenido_input:focus{
+    outline: none;
+    border-color: var(--celesteSecundario);
+}
+
+.boton_crear_nota{
+    background-color: transparent;
+    width: 68px;
+    height: 68px;
+    border: none;
+    border: var(--violetaPrimario) 2px solid;
+    border-radius: 50%; 
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    transition: .06s ease all;
+}
+
+.boton_crear_nota i{
+    font-size: 38px;
+    color: var(--violetaPrimario);
+    transition: .3s ease all;
+}
+
+.boton_crear_nota:hover{
+    border: var(--violetaPrimario) 0px solid;
+}
+
+.boton_crear_nota:hover i{
+    font-size: 52px;
+}
+
+.fondo_crear_nota{
+    display: none;
+    background-color: rgba(0, 0, 0, .20);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;    
+}
+
+.fondo_crear_nota.activo{
+    display: block;
+}
+
+.container_boton_guardar{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.boton_guardar{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.boton_guardar i{
+    font-size: 40px;
+    color: var(--celesteSecundario);
+    transition: .4s ease all;
+}
+
+.boton_guardar i:hover{
+    color: var(--violetaPrimario);
+}
+
+.nota{
+    width: 200px;
+    min-height: 150px;
+    background-color: var(--celesteSecundario);
+    border: 2px solid var(--violetaPrimario);
+    margin: 20px;
+    display: inline-block;
+}
+
+@keyframes popup {
+    
+}

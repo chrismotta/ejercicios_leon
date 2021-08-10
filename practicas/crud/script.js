@@ -5,6 +5,7 @@ const usuario = document.getElementById("usuario");
 const comentarioMensaje = document.getElementById("comentario");
 const esapcioComentarios = document.getElementById("container-de-comentarios");
 
+
 const arrayComentarios = [];
 let acumulador = 1;
 let cajaComentarios = "";
@@ -48,4 +49,4 @@ function popularComentarios() {
 
 window.editar = function (id) {
   alert(`Editando el elemento ${id}`);
-};
+}
